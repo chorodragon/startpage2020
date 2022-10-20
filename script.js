@@ -5,7 +5,12 @@ document.getElementById("searchTerm").addEventListener("keyup", function(event) 
 		document.getElementById("searchTerm").value = "";
 	}
 });
+document.cookie = encodeURIComponent("name") + '=' + encodeURIComponent("value");
+
+alert(document.cookie); // show all cookies
+
 };
+
 
 function updateTime() {
 	let dt = new Date();
@@ -16,3 +21,5 @@ function updateTime() {
 }
 
 setInterval(updateTime, 3000);
+
+
