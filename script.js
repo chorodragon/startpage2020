@@ -8,6 +8,7 @@ document.getElementById("searchTerm").addEventListener("keyup", function(event) 
 document.cookie = encodeURIComponent("name") + '=' + encodeURIComponent("value");
 
 alert(document.cookie); // show all cookies
+console.log(document.cookie)
 
 };
 
